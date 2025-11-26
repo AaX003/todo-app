@@ -1,0 +1,146 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/* body */
+body {
+    background: #e2ebf0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* app container */
+.todo-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    place-self: center;
+    background: white;
+    padding: 2rem 2.5rem;
+    border-radius: 16px;
+    box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 420px;
+    transition: transform 0.2s ease-in-out;
+}
+
+/* title */
+.header-title {
+    text-align: center;
+    font-size: 1.8rem;
+    color: #333;
+}
+
+/* subtitle */
+.header-subtitle {
+   text-align: center;
+   font-size: 0.9rem;
+   color: #666;
+}
+
+/* input section */
+.input-container {
+   display: flex;
+   margin-top: 1.5rem;
+   gap: .5rem;
+}
+
+.input-container input {
+    flex: 1;
+    padding: 0.6rem 0.8rem;
+    border-radius: 8px;
+    border: 1.8px solid #ccc;
+    font-size: 0.95rem;
+    transition: border-color 0.2s ease;
+}
+
+.input-container input:focus {
+    outline: none;
+    border-color: #4a90e2;
+}
+
+/* add button + hover */
+.add-btn {
+    background: #4a90e2;
+    color: #fff;
+    border: none;
+    padding: 0.6rem 1.1rem;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.add-btn:hover {
+   background: #357abd;
+}
+
+/* empty message */
+.no-task-msg {
+    text-align: center;
+    color: #777;
+    margin-top: 2rem;
+    font-style: italic;
+}
+
+/* task section */
+.task-container {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+/* individual card + hover */
+.task-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #f8f9fa;
+    border: 1px solid #e6e6e6;
+    border-radius: 10px;
+    padding: 0.6rem 0.9rem;
+    transition: background 0.2s ease, transform 0.15s ease;
+}
+
+.task-card:hover {
+   background: #eef3f6;
+   transform: translateY(-2px);
+}
+
+/* minimal checkbox styling */
+.task-card input[type="checkbox"] {
+   width: 18px;
+   height: 18px;
+   accent-color: #4a90e2;
+   cursor: pointer;
+}
+
+/* span styling */
+
+.task-card span {
+   flex: 1;
+   font-size: 1rem;
+   color: #333;
+   word-break: break-word;
+}
+
+/* delete button + hover */
+.del-btn-wrapper {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.del-btn {
+  background: none;
+  border: none;
+  color: #ff5c5c;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.del-btn:hover {
+    transform: scale(1.2);
+}
