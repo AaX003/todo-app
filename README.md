@@ -38,10 +38,10 @@ Follow these steps to run the project locally.
 
 ```bash
 # Clone the repository
-git clone <YOUR_REPO_URL>
+git clone https://github.com/AaX003/todo-app.git
 
 # Go into the project folder
-cd <YOUR_PROJECT_FOLDER>
+cd todo-app
 
 # Install dependencies
 npm install
