@@ -4,8 +4,7 @@ A very versatile tool for tracking and completing tasks. It performs basic CRUD 
 
 ## 🚀 Demo
 
-Live Demo: _coming soon_  
-Repository: <LINK_TO_YOUR_REPO>
+Live Demo: https://axacodes-to-do-list-app.netlify.app/ 
 
 ---
 
